@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#10112b"><title>CampusConnect | MSRUAS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"></head>
+<body><div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+<nav class="topbar"><a class="brand" href="/"><span class="brand-mark">C</span><span>Campus<span class="brand-accent">Connect</span></span></a>
+<div class="nav-links">{% if student %}<span class="student-chip"><i></i>{{ student.name }}</span><a href="/chat">Discover</a><a class="nav-join" href="/logout">Logout ↗</a>{% else %}<a href="/login">Log in</a><a class="nav-join" href="/register">Join campus ↗</a>{% endif %}</div></nav>
+<main>{% with messages=get_flashed_messages() %}{% if messages %}<div class="flash">{% for m in messages %}{{m}}{% endfor %}</div>{% endif %}{% endwith %}{% block content %}{% endblock %}</main>
+<footer><span class="footer-mark">C</span><span>Made for the MSRUAS student community</span><span class="footer-dot">•</span><span>Be kind. Stay safe.</span></footer></body></html>

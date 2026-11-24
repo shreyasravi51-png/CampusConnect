@@ -1,0 +1,15 @@
+{% extends "base.html" %}{% block content %}
+<section class="hero"><div class="hero-copy"><div class="eyebrow"><span class="eyebrow-line"></span> THE CAMPUS, CONNECTED</div>
+<h1>Your next great<br>conversation is<br><span class="gradient-text">one hello away.</span></h1>
+<p class="hero-description">A place to meet, chat and video call fellow MSRUAS students. New faces, shared campus life, and conversations that start with a simple hello.</p>
+<div class="hero-actions">{% if student %}<a class="button primary-button" href="/chat">Explore conversations <span>↗</span></a>{% else %}<a class="button primary-button" href="/register">Join your campus <span>↗</span></a><a class="text-link" href="/login">I already have an account</a>{% endif %}</div>
+<div class="trust-row"><span><b>✦</b> Student community</span><span><b>✦</b> Random matching</span><span><b>✦</b> Text & video</span></div></div>
+<div class="hero-visual"><div class="visual-glow"></div><div class="floating-tag tag-top"><span class="tag-icon">✳</span><span><b>Meet someone new</b><small>Right here on campus</small></span></div>
+<div class="connect-card"><div class="card-topline"><span class="live-dot"></span> CAMPUS CONNECTIONS <span class="sparkle">✦</span></div><div class="avatar-stack"><div class="avatar avatar-a">A</div><div class="avatar avatar-b">S</div><div class="avatar avatar-c">R</div><div class="avatar avatar-d">M</div><div class="avatar-more">+</div></div>
+<h2>Good conversations<br>start here.</h2><p>Find your people. Share a laugh. Make a new campus memory.</p><div class="card-bottom"><span>MSRUAS STUDENTS</span><span class="arrow-circle">↗</span></div></div>
+<div class="floating-tag tag-bottom"><span class="mini-wave">〰</span><span><b>Your campus, your circle</b><small>Say hello to a new friend</small></span></div><div class="decor decor-one">✦</div><div class="decor decor-two">✳</div></div></section>
+<section class="features-section"><div class="section-heading"><div class="eyebrow"><span class="eyebrow-line"></span> MADE FOR MEETING</div><h2>More than just a chat.</h2><p>Easy ways to turn a random match into a real connection.</p></div>
+<div class="features"><article class="feature-card feature-purple"><div class="feature-icon">✳</div><span class="feature-number">01 / DISCOVER</span><h3>Meet new people</h3><p>Get paired with another student from the MSRUAS community.</p></article>
+<article class="feature-card feature-blue"><div class="feature-icon">⌁</div><span class="feature-number">02 / CONNECT</span><h3>Text or video</h3><p>Start with a message and switch to a face-to-face conversation.</p></article>
+<article class="feature-card feature-pink"><div class="feature-icon">♡</div><span class="feature-number">03 / YOUR SPACE</span><h3>Stay in control</h3><p>Skip or leave a chat whenever you want. Report anything uncomfortable.</p></article></div>
+<div class="bottom-note"><span class="note-star">✦</span><span><b>A campus community, built around respect.</b><small>Be thoughtful, protect your privacy, and treat every student with kindness.</small></span></div></section>{% endblock %}
